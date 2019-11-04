@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="527.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Login">
+<AnchorPane prefHeight="527.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.LoginandRegister">
    <children>
-      <TextField fx:id="User" layoutX="284.0" layoutY="150.0" />
-      <TextField fx:id="Pass" layoutX="284.0" layoutY="248.0" />
-      <Button fx:id="Login" layoutX="439.0" layoutY="350.0" mnemonicParsing="false" onAction="#setLogin" text="Login" />
-      <Button fx:id="Regis" layoutX="252.0" layoutY="350.0" mnemonicParsing="false" onAction="#toRegis" text="Register" />
+      <TextField fx:id="Usernamelog" layoutX="284.0" layoutY="150.0" />
+      <TextField fx:id="Passwordlog" layoutX="284.0" layoutY="248.0" />
+      <Button layoutX="439.0" layoutY="350.0" mnemonicParsing="false" onAction="#LoginBtn" text="Login" />
+      <Button layoutX="252.0" layoutY="350.0" mnemonicParsing="false" onAction="#ToRegis" text="Register" />
+      <Label fx:id="ERRORLOGIN" layoutX="360.0" layoutY="446.0" text="Label" />
    </children>
 </AnchorPane>

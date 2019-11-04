@@ -5,15 +5,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="624.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Login">
+<AnchorPane prefHeight="624.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.LoginandRegister">
    <children>
-      <TextField layoutX="374.0" layoutY="95.0" />
-      <TextField layoutX="374.0" layoutY="160.0" />
-      <TextField layoutX="374.0" layoutY="245.0" />
-      <TextField layoutX="374.0" layoutY="349.0" />
-      <TextField layoutX="374.0" layoutY="441.0" />
-      <Button layoutX="176.0" layoutY="510.0" mnemonicParsing="false" text="Button" />
-      <Button fx:id="regis" layoutX="688.0" layoutY="526.0" mnemonicParsing="false" onAction="#ConfirmRegis" text="Button" />
+      <TextField fx:id="User" layoutX="374.0" layoutY="95.0" />
+      <TextField fx:id="Pass" layoutX="374.0" layoutY="160.0" />
+      <TextField fx:id="name" layoutX="374.0" layoutY="245.0" />
+      <TextField fx:id="surname" layoutX="374.0" layoutY="349.0" />
+      <TextField fx:id="email" layoutX="374.0" layoutY="441.0" />
+      <Button layoutX="176.0" layoutY="510.0" mnemonicParsing="false" onAction="#BacktoLogin" text="Button" />
+      <Button layoutX="688.0" layoutY="526.0" mnemonicParsing="false" onAction="#Register" text="Button" />
       <Label fx:id="Error" layoutX="450.0" layoutY="557.0" text="Error" visible="false" />
+      <Label fx:id="ERRORREGIS" layoutX="439.0" layoutY="557.0" text="Label" />
    </children>
 </AnchorPane>

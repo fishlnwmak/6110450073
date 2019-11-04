@@ -54,6 +54,7 @@ public class Controller {
     Text text1;
     @FXML
     TextArea textArea;
+    @FXML Button T1,T11,T111,T2,T22,T222,T3,T33,T333,T4,T44,T444,T5,T55,T555,T6,T66,T666,Logout;
 
 
 
@@ -304,8 +305,28 @@ public class Controller {
         Pic5.setVisible(false);
         Pic6.setVisible(false);
         Btn2.setVisible(true);
-        BtnNext1.setVisible(true);
         n = 1;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
+
+
 
 
     }
@@ -330,8 +351,26 @@ public class Controller {
         Pic6.setVisible(false);
         Btn2.setVisible(true);
         BtnNext1.setVisible(true);
-        Btn2.setVisible(true);
         n = 2;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
 
     }
 
@@ -352,8 +391,26 @@ public class Controller {
         Pic5.setVisible(false);
         Pic6.setVisible(false);
         Btn2.setVisible(true);
-        BtnNext1.setVisible(true);
         n = 3;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
     }
 
     @FXML
@@ -373,8 +430,27 @@ public class Controller {
         Pic5.setVisible(false);
         Pic6.setVisible(false);
         Btn2.setVisible(true);
-        BtnNext1.setVisible(true);
+
         n = 4;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
     }
 
     @FXML
@@ -393,8 +469,27 @@ public class Controller {
         Pic5.setVisible(false);
         Pic6.setVisible(false);
         Btn2.setVisible(true);
-        BtnNext1.setVisible(true);
+
         n = 5;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
     }
 
     @FXML
@@ -412,8 +507,27 @@ public class Controller {
         Pic5.setVisible(false);
         Pic6.setVisible(false);
         Btn2.setVisible(true);
-        BtnNext1.setVisible(true);
+
         n = 6;
+        T1.setVisible(false);
+        T11.setVisible(false);
+        T111.setVisible(false);
+        T2.setVisible(false);
+        T22.setVisible(false);
+        T222.setVisible(false);
+        T3.setVisible(false);
+        T33.setVisible(false);
+        T333.setVisible(false);
+        T4.setVisible(false);
+        T44.setVisible(false);
+        T444.setVisible(false);
+        T5.setVisible(false);
+        T55.setVisible(false);
+        T555.setVisible(false);
+        T6.setVisible(false);
+        T66.setVisible(false);
+        T666.setVisible(false);
+        Logout.setVisible(false);
     }
 
     @FXML
@@ -428,58 +542,85 @@ public class Controller {
         Pic5.setVisible(true);
         Pic6.setVisible(true);
         Btn2.setVisible(false);
-        BtnNext1.setVisible(false);
         textF.setVisible(false);
         n = 0;
+        T1.setVisible(true);
+        T11.setVisible(true);
+        T111.setVisible(true);
+        T2.setVisible(true);
+        T22.setVisible(true);
+        T222.setVisible(true);
+        T3.setVisible(true);
+        T33.setVisible(true);
+        T333.setVisible(true);
+        T4.setVisible(true);
+        T44.setVisible(true);
+        T444.setVisible(true);
+        T5.setVisible(true);
+        T55.setVisible(true);
+        T555.setVisible(true);
+        T6.setVisible(true);
+        T66.setVisible(true);
+        T666.setVisible(true);
+        Logout.setVisible(true);
     }
 
     @FXML
-    public void Nexttotheater(ActionEvent event) throws IOException {
-        if (n == 1) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T1.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
-
-        } else if (n == 2) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
-
-        } else if (n == 3) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
-
-        } else if (n == 4) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
-
-        } else if (n == 5) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
-
-        } else if (n == 6) {
-            Button b = (Button) event.getSource();
-            Stage stage = (Stage) b.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
-            stage.setScene(new Scene(loader.load(), 900, 600));
-            stage.show();
+    public void Nexttotheater1(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T1.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
 
         }
+    @FXML
+    public void Nexttotheater2(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T2.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
 
     }
+    @FXML
+    public void Nexttotheater3(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T3.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
+
+    }
+    @FXML
+    public void Nexttotheater4(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T4.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
+
+    }
+    @FXML
+    public void Nexttotheater5(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T5.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
+
+    }
+    @FXML
+    public void Nexttotheater6(ActionEvent event) throws IOException {
+        Button b = (Button) event.getSource();
+        Stage stage = (Stage) b.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("T6.fxml"));
+        stage.setScene(new Scene(loader.load(), 900, 600));
+        stage.show();
+
+    }
+
+
 
 
 

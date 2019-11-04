@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
    <children>
       <ImageView fx:id="Pic2" fitHeight="309.0" fitWidth="201.0" layoutX="292.0" layoutY="65.0" onMouseClicked="#onmousepress2" onMousePressed="#onmousepress2" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -35,12 +35,30 @@
       </ImageView>
       <ImageView fx:id="Poster" fitHeight="384.0" fitWidth="271.0" layoutX="14.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" visible="false" />
       <Button fx:id="Btn2" layoutX="103.0" layoutY="728.0" mnemonicParsing="false" onAction="#Back" text="Button" visible="false" />
-      <Button fx:id="BtnNext1" layoutX="615.0" layoutY="744.0" mnemonicParsing="false" onAction="#Nexttotheater" text="Next" visible="false" />
       <ImageView fx:id="Pic1" fitHeight="270.0" fitWidth="188.0" layoutX="58.0" layoutY="65.0" onMouseClicked="#onmousepress1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/1.jpg" />
          </image>
       </ImageView>
       <TextArea fx:id="textF" layoutX="315.0" layoutY="128.0" prefHeight="384.0" prefWidth="645.0" visible="false" />
+      <Button fx:id="T1" layoutX="45.0" layoutY="366.0" mnemonicParsing="false" onAction="#Nexttotheater1" text="9.00" />
+      <Button fx:id="T11" layoutX="124.0" layoutY="366.0" mnemonicParsing="false" onAction="#Nexttotheater1" text="12.00" />
+      <Button fx:id="T111" layoutX="201.0" layoutY="366.0" mnemonicParsing="false" onAction="#Nexttotheater1" text="17.00" />
+      <Button fx:id="T2" layoutX="283.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater2" text="9.00" />
+      <Button fx:id="T22" layoutX="360.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater2" text="12.00" />
+      <Button fx:id="T222" layoutX="440.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater2" text="17.00" />
+      <Button fx:id="T3" layoutX="543.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater3" text="9.00" />
+      <Button fx:id="T33" layoutX="627.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater3" text="12.00" />
+      <Button fx:id="T333" layoutX="703.0" layoutY="369.0" mnemonicParsing="false" onAction="#Nexttotheater3" text="17.00" />
+      <Button fx:id="T4" layoutX="26.0" layoutY="744.0" mnemonicParsing="false" onAction="#Nexttotheater4" text="9.00" />
+      <Button fx:id="T44" layoutX="117.0" layoutY="744.0" mnemonicParsing="false" onAction="#Nexttotheater4" text="12.00" />
+      <Button fx:id="T444" layoutX="189.0" layoutY="744.0" mnemonicParsing="false" onAction="#Nexttotheater4" text="17.00" />
+      <Button fx:id="T5" layoutX="292.0" layoutY="754.0" mnemonicParsing="false" onAction="#Nexttotheater5" text="9.00" />
+      <Button fx:id="T55" layoutX="368.0" layoutY="754.0" mnemonicParsing="false" onAction="#Nexttotheater5" text="12.00" />
+      <Button fx:id="T555" layoutX="440.0" layoutY="754.0" mnemonicParsing="false" onAction="#Nexttotheater5" text="17.00" />
+      <Button fx:id="T6" layoutX="543.0" layoutY="739.0" mnemonicParsing="false" onAction="#Nexttotheater6" text="9.00" />
+      <Button fx:id="T66" layoutX="627.0" layoutY="739.0" mnemonicParsing="false" onAction="#Nexttotheater6" text="12.00" />
+      <Button fx:id="T666" layoutX="703.0" layoutY="739.0" mnemonicParsing="false" onAction="#Nexttotheater6" text="17.00" />
+      <Button fx:id="Logout" layoutX="795.0" layoutY="400.0" mnemonicParsing="false" text="Logout" />
    </children>
 </AnchorPane>

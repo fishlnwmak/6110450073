@@ -9,7 +9,6 @@ public class Customer {
     private String ID;
     private String password;
     private String email;
-    Collection<String> customer = new ArrayList<String>();
 
     public String getName() {
         return Name;
@@ -26,12 +25,16 @@ public class Customer {
     public String getEmail() {
         return email;
     }
-    public Customer(String ID, String password, String email, String Nsme, String surname) {
+    public Customer(String ID, String password, String email, String Name, String Surname) {
         this.Name = Name;
         this.Surname = Surname;
         this.ID = ID;
         this.password = password;
         this.email = email;
 
+    }
+    @Override
+    public String toString(){
+        return this.ID+","+this.password+","+this.Name+","+this.Surname+","+this.email;
     }
 }

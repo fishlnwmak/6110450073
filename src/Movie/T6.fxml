@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="723.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
    <children>
-      <Button fx:id="BtnT2" layoutX="803.0" layoutY="562.0" mnemonicParsing="false" onAction="#ToC" text="Next" />
+
       <ImageView fx:id="chair161" fitHeight="60.0" fitWidth="60.0" layoutX="164.0" layoutY="147.0" pickOnBounds="true">
          <image>
             <Image url="@../images/yellow-block.jpg" />

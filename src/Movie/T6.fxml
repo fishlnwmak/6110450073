@@ -1,36 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.T5">
+<AnchorPane prefHeight="723.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
    <children>
-      <Pane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="894.0">
-         <children>
-            <Label layoutX="424.0" layoutY="28.0" prefHeight="21.0" prefWidth="47.0" text="Screen" />
-            <CheckBox layoutX="169.0" layoutY="180.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="652.0" layoutY="180.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="530.0" layoutY="180.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="307.0" layoutY="180.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="652.0" layoutY="248.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="530.0" layoutY="248.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="307.0" layoutY="248.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="169.0" layoutY="248.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="530.0" layoutY="341.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="307.0" layoutY="341.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="169.0" layoutY="341.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="307.0" layoutY="401.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="169.0" layoutY="401.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="652.0" layoutY="341.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="652.0" layoutY="401.0" mnemonicParsing="false" text="CheckBox" />
-            <CheckBox layoutX="530.0" layoutY="401.0" mnemonicParsing="false" text="CheckBox" />
-            <Button layoutX="762.0" layoutY="492.0" mnemonicParsing="false" text="Next" />
-            <Label layoutX="427.0" layoutY="497.0" text="all seat = 400" />
-            <Button layoutX="200.0" layoutY="492.0" mnemonicParsing="false" text="back" />
-         </children>
-      </Pane>
+      <Button fx:id="BtnT2" layoutX="803.0" layoutY="562.0" mnemonicParsing="false" onAction="#ToC" text="Next" />
+      <ImageView fx:id="chair161" fitHeight="60.0" fitWidth="60.0" layoutX="164.0" layoutY="147.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair164" fitHeight="60.0" fitWidth="60.0" layoutX="432.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair163" fitHeight="60.0" fitWidth="60.0" layoutX="340.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair162" fitHeight="60.0" fitWidth="60.0" layoutX="255.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair169" fitHeight="60.0" fitWidth="60.0" layoutX="164.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair170" fitHeight="60.0" fitWidth="60.0" layoutX="255.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair171" fitHeight="60.0" fitWidth="60.0" layoutX="340.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair172" fitHeight="60.0" fitWidth="60.0" layoutX="432.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair165" fitHeight="60.0" fitWidth="60.0" layoutX="554.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair168" fitHeight="60.0" fitWidth="60.0" layoutX="819.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair167" fitHeight="60.0" fitWidth="60.0" layoutX="727.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair166" fitHeight="60.0" fitWidth="60.0" layoutX="645.0" layoutY="146.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair173" fitHeight="60.0" fitWidth="60.0" layoutX="554.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair174" fitHeight="60.0" fitWidth="60.0" layoutX="642.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair175" fitHeight="60.0" fitWidth="60.0" layoutX="727.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair176" fitHeight="60.0" fitWidth="60.0" layoutX="819.0" layoutY="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair177" fitHeight="60.0" fitWidth="60.0" layoutX="164.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair180" fitHeight="60.0" fitWidth="60.0" layoutX="432.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair179" fitHeight="60.0" fitWidth="60.0" layoutX="340.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair178" fitHeight="60.0" fitWidth="60.0" layoutX="255.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair185" fitHeight="60.0" fitWidth="60.0" layoutX="164.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair186" fitHeight="60.0" fitWidth="60.0" layoutX="255.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair187" fitHeight="60.0" fitWidth="60.0" layoutX="340.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair188" fitHeight="60.0" fitWidth="60.0" layoutX="432.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair181" fitHeight="60.0" fitWidth="60.0" layoutX="554.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair184" fitHeight="60.0" fitWidth="60.0" layoutX="822.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair183" fitHeight="60.0" fitWidth="60.0" layoutX="730.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair182" fitHeight="60.0" fitWidth="60.0" layoutX="645.0" layoutY="351.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair189" fitHeight="60.0" fitWidth="60.0" layoutX="554.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair190" fitHeight="60.0" fitWidth="60.0" layoutX="645.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair191" fitHeight="60.0" fitWidth="60.0" layoutX="730.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chair192" fitHeight="60.0" fitWidth="60.0" layoutX="822.0" layoutY="439.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/yellow-block.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="84.0" text="1">
+         <font>
+            <Font name="Gigi" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="88.0" text="2" />
+      <Label layoutX="365.0" layoutY="88.0" text="3" />
+      <Label layoutX="457.0" layoutY="88.0" text="4" />
+      <Label layoutX="565.0" layoutY="88.0" text="5" />
+      <Label layoutX="667.0" layoutY="88.0" text="6" />
+      <Label layoutX="747.0" layoutY="88.0" text="7" />
+      <Label layoutX="844.0" layoutY="88.0" text="8" />
+      <Button layoutX="185.0" layoutY="599.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="56.0" layoutY="472.0" text="D" />
+      <Label layoutX="56.0" layoutY="384.0" text="C" />
+      <Label layoutX="56.0" layoutY="267.0" text="B" />
+      <Label layoutX="56.0" layoutY="179.0" text="A" />
    </children>
 </AnchorPane>

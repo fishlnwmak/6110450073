@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Login">
+   <children>
+      <TextField layoutX="374.0" layoutY="95.0" />
+      <TextField layoutX="374.0" layoutY="160.0" />
+      <TextField layoutX="374.0" layoutY="245.0" />
+      <TextField layoutX="374.0" layoutY="349.0" />
+      <TextField layoutX="374.0" layoutY="441.0" />
+      <Button layoutX="176.0" layoutY="510.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="regis" layoutX="688.0" layoutY="526.0" mnemonicParsing="false" onAction="#ConfirmRegis" text="Button" />
+      <Label fx:id="Error" layoutX="450.0" layoutY="557.0" text="Error" visible="false" />
+   </children>
+</AnchorPane>

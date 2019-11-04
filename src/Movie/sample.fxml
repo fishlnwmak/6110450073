@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
+   <children>
+      <ImageView fx:id="Pic2" fitHeight="309.0" fitWidth="201.0" layoutX="292.0" layoutY="65.0" onMouseClicked="#onmousepress2" onMousePressed="#onmousepress2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic3" fitHeight="300.0" fitWidth="201.0" layoutX="547.0" layoutY="39.0" onMousePressed="#onmousepress3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic4" fitHeight="287.0" fitWidth="210.0" layoutX="32.0" layoutY="424.0" onMousePressed="#onmousepress4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic5" fitHeight="278.0" fitWidth="224.0" layoutX="292.0" layoutY="426.0" onMousePressed="#onmousepress5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic6" fitHeight="285.0" fitWidth="211.0" layoutX="543.0" layoutY="425.0" onMousePressed="#onmousepress6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Poster" fitHeight="384.0" fitWidth="271.0" layoutX="14.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <Button fx:id="Btn2" layoutX="103.0" layoutY="728.0" mnemonicParsing="false" onAction="#Back" text="Button" visible="false" />
+      <Button fx:id="BtnNext1" layoutX="615.0" layoutY="744.0" mnemonicParsing="false" onAction="#Nexttotheater" text="Next" visible="false" />
+      <ImageView fx:id="Pic1" fitHeight="270.0" fitWidth="188.0" layoutX="58.0" layoutY="65.0" onMouseClicked="#onmousepress1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textF" layoutX="315.0" layoutY="128.0" prefHeight="384.0" prefWidth="645.0" visible="false" />
+   </children>
+</AnchorPane>

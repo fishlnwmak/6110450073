@@ -19,9 +19,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.CheckBox;
 
 import java.awt.*;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 
@@ -59,58 +57,13 @@ public class Controller {
 
 
     //    //รง 1
-    @FXML ImageView check1;
-    @FXML ImageView check2;
-    @FXML ImageView check3;
-    @FXML ImageView check4;
-    @FXML ImageView check5;
-    @FXML ImageView check6;
-    @FXML ImageView check7;
-    @FXML ImageView check8;
-    @FXML ImageView check9;
-    @FXML ImageView check10;
-    @FXML ImageView check11;
-    @FXML ImageView check12;
-    @FXML ImageView check13;
-    @FXML ImageView check133;
-    @FXML ImageView check14;
-    @FXML ImageView check144;
-    @FXML ImageView check15;
-    @FXML ImageView check155;
-    @FXML ImageView check16;
-    @FXML ImageView check166;
-    @FXML ImageView check17;
-    @FXML ImageView check18;
-    @FXML ImageView check19;
-    @FXML ImageView check20;
-    @FXML ImageView check21;
-    @FXML ImageView check22;
-    @FXML ImageView check23;
-    @FXML ImageView check24;
-    @FXML ImageView check25;
-    @FXML ImageView check26;
-    @FXML ImageView check27;
-    @FXML ImageView check28;
-    @FXML ImageView check29;
-    @FXML ImageView check30;
-    @FXML ImageView check31;
-    @FXML ImageView check32;
-    @FXML ImageView check33;
-    @FXML ImageView check34;
-    @FXML ImageView check35;
-    @FXML ImageView check36;
-    @FXML ImageView check37;
-    @FXML ImageView check38;
-    @FXML ImageView check39;
-    @FXML ImageView check40;
-    @FXML ImageView check41;
-    @FXML ImageView check42;
-    @FXML ImageView check43;
-    @FXML ImageView check44;
-    @FXML ImageView check45;
-    @FXML ImageView check46;
-    @FXML ImageView check47;
-    @FXML ImageView check48;
+    @FXML ImageView check1,check2,check3,check4,check5,check6,check7,check8,check9,check10,check11,check12;
+    @FXML ImageView check13,check14,check15,check16,check17,check18,check19,check20,check21,check22,check23,check24,check25,check26;
+    @FXML ImageView check27,check28,check29,check30,check31,check32,check33,check34,check35,check36,check37,check38,check39,check40;
+    @FXML ImageView check41,check42,check43,check44,check45,check46,check47,check48,check49,check50,check51,check52,check53,check54;
+    @FXML ImageView check55,check56,check57,check58,check59,check60,check61,check62,check63,check64,check65,check66,check67,check68,check69,check70;
+    @FXML ImageView check71,check72,check73,check74,check75,check76,check77,check78,check79,check80,check81,check82,check83,check84,check85,check86;
+
 
 
 
@@ -120,158 +73,12 @@ public class Controller {
 
 
     @FXML
-    ImageView chair1;
-    @FXML
-    ImageView chair2;
-    @FXML
-    ImageView chair3;
-    @FXML
-    ImageView chair4;
-        @FXML
-    ImageView chair5;
-    @FXML
-    ImageView chair6;
-    @FXML
-    ImageView chair7;
-    @FXML
-    ImageView chair8;
-    @FXML
-    ImageView chair9;
-    @FXML
-    ImageView chair10;
-    @FXML
-    ImageView chair11;
-    @FXML
-    ImageView chair12;
-    @FXML
-    ImageView chair13;
-    @FXML
-    ImageView chair133;
-    @FXML
-    ImageView chair14;
-    @FXML
-    ImageView chair144;
-    @FXML
-    ImageView chair15;
-    @FXML
-    ImageView chair155;
-    @FXML
-    ImageView chair16;
-    @FXML
-    ImageView chair166;
-    @FXML
-    ImageView chair17;
-    @FXML
-    ImageView chair18;
-    @FXML
-    ImageView chair19;
-    @FXML
-    ImageView chair20;
-    @FXML
-    ImageView chair21;
-    @FXML
-    ImageView chair22;
-    @FXML
-    ImageView chair23;
-    @FXML
-    ImageView chair24;
-    @FXML
-    ImageView chair25;
-    @FXML
-    ImageView chair26;
-    @FXML
-    ImageView chair27;
-    @FXML
-    ImageView chair28;
-    @FXML
-    ImageView chair29;
-    @FXML
-    ImageView chair30;
-    @FXML
-    ImageView chair31;
-    @FXML
-    ImageView chair32;
-    @FXML
-    ImageView chair33;
-    @FXML
-    ImageView chair34;
-    @FXML
-    ImageView chair35;
-    @FXML
-    ImageView chair36;
-    @FXML
-    ImageView chair37;
-    @FXML
-    ImageView chair38;
-    @FXML
-    ImageView chair39;
-    @FXML
-    ImageView chair40;
-    @FXML
-    ImageView chair41;
-    @FXML
-    ImageView chair42;
-    @FXML
-    ImageView chair43;
-    @FXML
-    ImageView chair44;
-    @FXML
-    ImageView chair45;
-    @FXML
-    ImageView chair46;
-    @FXML
-    ImageView chair47;
-    @FXML
-    ImageView chair48;
-//    @FXML
-//    ImageView chair49;
-//    @FXML
-//    ImageView chair50;
-//    @FXML
-//    ImageView chair51;
-//    @FXML
-//    ImageView chair52;
-//    @FXML
-//    ImageView chair53;
-//    @FXML
-//    ImageView chair54;
-//    @FXML
-//    ImageView chair55;
-//    @FXML
-//    ImageView chair56;
-//    @FXML
-//    ImageView chair57;
-//    @FXML
-//    ImageView chair58;
-//    @FXML
-//    ImageView chair59;
-//    @FXML
-//    ImageView chair60;
-//    @FXML
-//    ImageView chair61;
-//    @FXML
-//    ImageView chair62;
-//    @FXML
-//    ImageView chair63;
-//    @FXML
-//    ImageView chair64;
-//// โรง 3
-//    @FXML
-//    ImageView chair65;
-//    @FXML
-//    ImageView chair66;
-//    @FXML
-//    ImageView chair67;
-//    @FXML
-//    ImageView chair68;
-//    @FXML
-//    ImageView chair69;
-//    @FXML
-//    ImageView chair70;
-//    @FXML
-//    ImageView chair71;
-//    @FXML
-//    ImageView chair72;
+    ImageView chair1,chair2,chair3,chair4,chair5,chair6,chair7,chair8,chair9,chair10,chair11,chair12;
+    @FXML ImageView chair13,chair14,chair15,chair16,chair17,chair18,chair19,chair20,chair21,chair22,chair23,chair24,chair25,chair26;
+    @FXML ImageView chair27,chair28,chair29,chair30,chair31,chair32,chair33,chair34,chair35,chair36,chair37,chair38,chair39,chair40;
+    @FXML ImageView chair41,chair42,chair43,chair44,chair45,chair46,chair47,chair48,chair49,chair50,chair51,chair52,chair53,chair54;
+    @FXML ImageView chair55,chair56,chair57,chair58,chair59,chair60,chair61,chair62,chair63,chair64,chair65,chair66,chair67,chair68,chair69,chair70;
+    @FXML ImageView chair71,chair72,chair73,chair74,chair75,chair76,chair77,chair78,chair79,chair80,chair81,chair82,chair83,chair84,chair85,chair86;
 
 
     //    @FXML public void ToT1(ActionEvent event) throws IOException{
@@ -619,307 +426,298 @@ public class Controller {
         stage.show();
 
     }
+    @FXML public void WriteT1(ArrayList<String> seatT1){
+        String Seperate = File.separator;
+        String x = System.getProperty("user.dir") + Seperate + "resources";
+        String Filename = x + Seperate + "Booking.csv";
+        FileWriter fileWriter = null;
+        PrintWriter printWriter = null;
+        try {
+            fileWriter = new FileWriter(Filename);
+            printWriter = new PrintWriter(fileWriter);
+            for(String seat:seatT1){
+                printWriter.println(seat);
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            if(printWriter!=null){
+                printWriter.close();
+            }
+        }
 
 
+    }
+    ArrayList<String> seatT1 = new ArrayList<>();
+    Theater theater = new Theater();
+
+    ArrayList<Theater> g = new ArrayList<>();
 
 
 
     @FXML public void seat1to12(ActionEvent actionEvent){
-        Theater T1 = new Theater();
-        if(chair1.isVisible()== false){
-             T1.setPrice(120);
-             T1.name("A1");
+
+
+        if(chair1.isVisible()== false&&!(chair1.isDisable())){
+            seatT1.add("A1,Theater1");
+
              chair1.setDisable(true);
              check1.setDisable(true);
+
+
+
         }
-        if(chair2.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("A2");
+        if(chair2.isVisible()== false&&!(chair2.isDisable())){
+            seatT1.add("A2,Theater1");
             chair2.setDisable(true);
             check2.setDisable(true);
 
 
         }
-        if(chair3.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("A3");
+        if(chair3.isVisible()== false&&!(chair3.isDisable())){
+            seatT1.add("A3,Theater1");
             chair3.setDisable(true);
             check3.setDisable(true);
 
 
         }
-        if(chair4.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("A4");
+        if(chair4.isVisible()== false&&!(chair4.isDisable())){
+            seatT1.add("A4,Theater1");
             chair4.setDisable(true);
             check4.setDisable(true);
 
 
         }
-        if(chair5.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("B1");
+        if(chair5.isVisible()== false&&!(chair5.isDisable())){
+            seatT1.add("B1,Theater1");
             chair5.setDisable(true);
             check5.setDisable(true);
 
 
         }
-        if(chair6.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("B2");
+        if(chair6.isVisible()== false&&!(chair6.isDisable())){
+            seatT1.add("B2,Theater1");
             chair6.setDisable(true);
             check6.setDisable(true);
 
         }
-        if(chair7.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("B3");
+        if(chair7.isVisible()== false&&!(chair7.isDisable())){
+            seatT1.add("B3,Theater1");
             chair7.setDisable(true);
             check7.setDisable(true);
 
         }
-        if(chair8.isVisible()== false){
-            T1.setPrice(120);
-            T1.name("B4");
+        if(chair8.isVisible()== false&&!(chair8.isDisable())){
+            seatT1.add("B4,Theater1");
             chair8.setDisable(true);
             check8.setDisable(true);
 
         }
-        if(chair9.isVisible()== false){
-            T1.setPrice(150);
-            T1.name("C1");
+        if(chair9.isVisible()== false&&!(chair9.isDisable())){
+            seatT1.add("C1,Theater1");
             chair9.setDisable(true);
             check9.setDisable(true);
 
         }
-        if(chair10.isVisible()== false){
-            T1.setPrice(150);
-            T1.name("C2");
+        if(chair10.isVisible()== false&&!(chair10.isDisable())){
+            seatT1.add("C2,Theater1");
             chair10.setDisable(true);
             check10.setDisable(true);
 
         }
-        if(chair11.isVisible()== false){
-            T1.setPrice(150);
-            T1.name("C3");
+        if(chair11.isVisible()== false&&!(chair11.isDisable())){
+            seatT1.add("C3,Theater1");
             chair11.setDisable(true);
             check11.setDisable(true);
 
         }
-        if(chair12.isVisible()== false){
-            T1.setPrice(150);
-            T1.name("C4");
+        if(chair12.isVisible()== false&&!(chair12.isDisable())){
+            seatT1.add("C4,Theater1");
             chair12.setDisable(true);
             check12.setDisable(true);
 
         }
+        WriteT1(seatT1);
 
 
 
     }
 
-    @FXML public void seat13to24(ActionEvent actionEvent){
+    @FXML public void seat13to26(ActionEvent actionEvent){
         Theater T1 = new Theater();
-        if(chair13.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
+        if(chair13.isVisible()== false&&!(chair13.isDisable())){
             chair13.setDisable(true);
             check13.setDisable(true);
 
         }
-        if(chair133.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
-            chair133.setDisable(true);
-            check133.setDisable(true);
 
-        }
-        if(chair14.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A2");
+        if(chair14.isVisible()== false&&!(chair14.isDisable())){
             chair14.setDisable(true);
             check14.setDisable(true);
 
         }
-        if(chair144.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
-            chair144.setDisable(true);
-            check144.setDisable(true);
 
-        }
-        if(chair15.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A3");
+        if(chair15.isVisible()== false&&!(chair15.isDisable())){
             chair15.setDisable(true);
             check15.setDisable(true);
 
         }
-        if(chair155.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
-            chair155.setDisable(true);
-            check155.setDisable(true);
 
-        }
-        if(chair16.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A4");
+        if(chair16.isVisible()== false&&!(chair16.isDisable())){
             chair16.setDisable(true);
             check16.setDisable(true);
 
         }
-        if(chair166.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
-            chair166.setDisable(true);
-            check166.setDisable(true);
 
-        }
-        if(chair17.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B1");
+        if(chair17.isVisible()== false&&!(chair17.isDisable())){
+
             chair17.setDisable(true);
             check17.setDisable(true);
 
         }
-        if(chair18.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B2");
+        if(chair18.isVisible()== false&&!(chair18.isDisable())){
+
             chair18.setDisable(true);
             check18.setDisable(true);
 
         }
-        if(chair19.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B3");
+        if(chair19.isVisible()== false&&!(chair19.isDisable())){
+
             chair19.setDisable(true);
             check19.setDisable(true);
 
         }
-        if(chair20.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B4");
+        if(chair20.isVisible()== false&&!(chair20.isDisable())){
+
             chair20.setDisable(true);
             check20.setDisable(true);
 
         }
-        if(chair21.isVisible()== false){
-            T1.setPrice(200);
-            T1.name("D1");
+        if(chair21.isVisible()== false&&!(chair21.isDisable())){
+
             chair21.setDisable(true);
             check21.setDisable(true);
 
         }
-        if(chair22.isVisible()== false){
-            T1.setPrice(200);
-            T1.name("D2");
+        if(chair22.isVisible()== false&&!(chair22.isDisable())){
+
             chair22.setDisable(true);
             check22.setDisable(true);
 
         }
-        if(chair23.isVisible()== false){
-            T1.setPrice(200);
-            T1.name("D3");
+        if(chair23.isVisible()== false&&!(chair23.isDisable())){
+
             chair23.setDisable(true);
             check23.setDisable(true);
 
         }
-        if(chair24.isVisible()== false){
-            T1.setPrice(200);
-            T1.name("D4");
+        if(chair24.isVisible()== false&&!(chair24.isDisable())){
+
             chair24.setDisable(true);
             check24.setDisable(true);
+
+        }
+        if(chair25.isVisible()== false&&!(chair25.isDisable())){
+
+            chair25.setDisable(true);
+            check25.setDisable(true);
+
+        }
+        if(chair26.isVisible()== false&&!(chair26.isDisable())){
+
+            chair26.setDisable(true);
+            check26.setDisable(true);
 
         }
 
 
     }
 
-    @FXML public void seat25to36(ActionEvent actionEvent){
+    @FXML public void seat27to40(ActionEvent actionEvent){
         Theater T1 = new Theater();
-        if(chair25.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
-            chair25.setDisable(true);
-            check25.setDisable(true);
-        }
-        if(chair26.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B2");
-            chair26.setDisable(true);
-            check26.setDisable(true);
+        if(chair27.isVisible()== false&&!(chair27.isDisable())){
 
-        }
-        if(chair27.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A4");
+
             chair27.setDisable(true);
             check27.setDisable(true);
 
         }
-        if(chair28.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A2");
+        if(chair28.isVisible()== false&&!(chair28.isDisable())){
+
             chair28.setDisable(true);
             check28.setDisable(true);
 
         }
-        if(chair29.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A3");
+        if(chair29.isVisible()== false&&!(chair29.isDisable())){
+
+
             chair29.setDisable(true);
             check29.setDisable(true);
 
 
         }
-        if(chair30.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B1");
+        if(chair30.isVisible()== false&&!(chair30.isDisable())){
+
+
             chair30.setDisable(true);
             check30.setDisable(true);
 
         }
-        if(chair31.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B4");
+        if(chair31.isVisible()== false&&!(chair31.isDisable())){
+
             chair31.setDisable(true);
             check31.setDisable(true);
 
         }
-        if(chair32.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B3");
+        if(chair32.isVisible()== false&&!(chair32.isDisable())){
+
             chair32.setDisable(true);
             check32.setDisable(true);
 
         }
-        if(chair33.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C4");
+        if(chair33.isVisible()== false&&!(chair33.isDisable())){
+
             chair33.setDisable(true);
             check33.setDisable(true);
 
         }
-        if(chair34.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C3");
+        if(chair34.isVisible()== false&&!(chair34.isDisable())){
+
             chair34.setDisable(true);
             check34.setDisable(true);
 
         }
-        if(chair35.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C2");
+        if(chair35.isVisible()== false&&!(chair35.isDisable())){
+
             chair35.setDisable(true);
             check35.setDisable(true);
 
         }
-        if(chair36.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C1");
+        if(chair36.isVisible()== false&&!(chair36.isDisable())){
             chair36.setDisable(true);
             check36.setDisable(true);
+
+        }
+        if(chair37.isVisible()== false&&!(chair37.isDisable())){
+            chair37.setDisable(true);
+            check37.setDisable(true);
+
+        }
+        if(chair38.isVisible()== false&&!(chair38.isDisable())){
+            chair38.setDisable(true);
+            check38.setDisable(true);
+
+        }
+        if(chair39.isVisible()== false&&!(chair39.isDisable())){
+            chair39.setDisable(true);
+            check39.setDisable(true);
+
+        }
+        if(chair40.isVisible()== false&&!(chair40.isDisable())){
+            chair40.setDisable(true);
+            check40.setDisable(true);
 
         }
 
@@ -929,85 +727,74 @@ public class Controller {
     @FXML public void seat37to47(ActionEvent actionEvent){
         Theater T1 = new Theater();
         if(chair37.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A1");
             chair37.setDisable(true);
             check37.setDisable(true);
         }
         if(chair38.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B2");
+
             chair38.setDisable(true);
             check38.setDisable(true);
 
         }
         if(chair39.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A4");
+
             chair39.setDisable(true);
             check39.setDisable(true);
 
         }
         if(chair40.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A2");
+
             chair40.setDisable(true);
             check40.setDisable(true);
 
         }
         if(chair41.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("A3");
+
             chair41.setDisable(true);
             check41.setDisable(true);
 
 
         }
         if(chair42.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B1");
+
             chair42.setDisable(true);
             check42.setDisable(true);
 
         }
         if(chair43.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B4");
+
             chair43.setDisable(true);
             check43.setDisable(true);
 
         }
         if(chair44.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("B3");
+
+
             chair44.setDisable(true);
             check44.setDisable(true);
 
         }
         if(chair45.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C4");
+
+
             chair45.setDisable(true);
             check45.setDisable(true);
 
         }
         if(chair46.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C3");
+
             chair46.setDisable(true);
             check46.setDisable(true);
 
         }
         if(chair47.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C2");
+
             chair47.setDisable(true);
             check47.setDisable(true);
 
         }
         if(chair48.isVisible()== false){
-            T1.setPrice(160);
-            T1.name("C1");
+
             chair48.setDisable(true);
             check48.setDisable(true);
 
@@ -1021,11 +808,10 @@ public class Controller {
 
     @FXML public void changepic1(MouseEvent mouseEvent){
         ImageView chair = (ImageView) mouseEvent.getSource() ;
+        String num = "";
         if(chair.equals(chair1)){
             check1.setVisible(true);
             chair1.setVisible(false);
-
-
         }
         else if(chair.equals(check1)){
             chair1.setVisible(true);
@@ -1165,16 +951,7 @@ public class Controller {
             chair13.setVisible(true);
             check13.setVisible(false);
         }
-        if(chair.equals(chair133)){
-            check133.setVisible(true);
-            chair133.setVisible(false);
 
-
-        }
-        else if(chair.equals(check133)){
-            chair133.setVisible(true);
-            check133.setVisible(false);
-        }
         if(chair.equals(chair14)){
             check14.setVisible(true);
             chair14.setVisible(false);
@@ -1185,16 +962,7 @@ public class Controller {
             chair14.setVisible(true);
             check14.setVisible(false);
         }
-        if(chair.equals(chair144)){
-            check144.setVisible(true);
-            chair144.setVisible(false);
 
-
-        }
-        else if(chair.equals(check144)){
-            chair144.setVisible(true);
-            check144.setVisible(false);
-        }
 
         if(chair.equals(chair15)){
             check15.setVisible(true);
@@ -1206,16 +974,7 @@ public class Controller {
             chair15.setVisible(true);
             check15.setVisible(false);
         }
-        if(chair.equals(chair155)){
-            check155.setVisible(true);
-            chair155.setVisible(false);
 
-
-        }
-        else if(chair.equals(check155)){
-            chair155.setVisible(true);
-            check155.setVisible(false);
-        }
 
         if(chair.equals(chair16)){
             check16.setVisible(true);
@@ -1227,16 +986,7 @@ public class Controller {
             chair16.setVisible(true);
             check16.setVisible(false);
         }
-        if(chair.equals(chair166)){
-            check166.setVisible(true);
-            chair166.setVisible(false);
 
-
-        }
-        else if(chair.equals(check166)){
-            chair166.setVisible(true);
-            check166.setVisible(false);
-        }
 
         if(chair.equals(chair17)){
             check17.setVisible(true);
@@ -1325,12 +1075,6 @@ public class Controller {
             chair24.setVisible(true);
             check24.setVisible(false);
         }
-
-
-    }
-
-    @FXML public void changepic3(MouseEvent mouseEvent){
-        ImageView chair = (ImageView) mouseEvent.getSource() ;
         if(chair.equals(chair25)){
             check25.setVisible(true);
             chair25.setVisible(false);
@@ -1351,6 +1095,12 @@ public class Controller {
             chair26.setVisible(true);
             check26.setVisible(false);
         }
+
+
+    }
+
+    @FXML public void changepic3(MouseEvent mouseEvent){
+        ImageView chair = (ImageView) mouseEvent.getSource() ;
 
         if(chair.equals(chair27)){
             check27.setVisible(true);
@@ -1450,6 +1200,50 @@ public class Controller {
             chair36.setVisible(true);
             check36.setVisible(false);
         }
+        if(chair.equals(chair37)){
+            check37.setVisible(true);
+            chair37.setVisible(false);
+
+
+        }
+        else if(chair.equals(check37)){
+            chair37.setVisible(true);
+            check37.setVisible(false);
+        }
+        if(chair.equals(chair38)){
+            check38.setVisible(true);
+            chair38.setVisible(false);
+
+
+        }
+        else if(chair.equals(check38)){
+            chair38.setVisible(true);
+            check38.setVisible(false);
+        }
+        if(chair.equals(chair39)){
+            check39.setVisible(true);
+            chair39.setVisible(false);
+
+
+        }
+        else if(chair.equals(check39)){
+            chair39.setVisible(true);
+            check39.setVisible(false);
+        }
+        if(chair.equals(chair40)){
+            check40.setVisible(true);
+            chair40.setVisible(false);
+
+
+        }
+        else if(chair.equals(check40)){
+            chair40.setVisible(true);
+            check40.setVisible(false);
+        }
+
+
+
+
 
 
     }

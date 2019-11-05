@@ -10,36 +10,38 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Theater extends Controller {
-    private int price;
+public class Theater {
     private String ticket;
+    private String theanum;
 
 
-    public void Theater(String ticket,int price){
-        this.price=price;
+    public void Theater(String ticket ,String theanum){
         this.ticket=ticket;
-        price = 0;
-        ticket = "";
+        this.theanum = theanum;
 
 
 
     }
-    public void name(String tic){
-        ticket += tic+"";
-
-
-
-    }
-    public void setPrice(int money){
-        price +=money;
-    }
-    public void write(String z) throws IOException{
-        FileWriter fileWriter = new FileWriter("");
+    @Override
+    public String toString(){
+        return this.ticket+""+this.theanum;
     }
 
-
-
+    public String gettheanum() {
+        return theanum;
     }
+
+    public String getTicket() {
+        return ticket;
+    }
+}
+
+
+
+
+
+
+
 
 
 

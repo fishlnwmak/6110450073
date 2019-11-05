@@ -148,5 +148,7 @@
             <Image url="@../images/vip%20chair%20check.png" />
          </image>
       </ImageView>
+      <Button layoutX="66.0" layoutY="73.0" mnemonicParsing="false" onAction="#show3" prefHeight="31.0" prefWidth="161.0" text="เเสดงผลลัพธ์การจอง" />
+      <Button layoutX="114.0" layoutY="508.0" mnemonicParsing="false" onAction="#backtotheaterselection" text="Button" />
    </children>
 </AnchorPane>

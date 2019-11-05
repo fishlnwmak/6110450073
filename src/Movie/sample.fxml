@@ -6,7 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
    <children>
       <ImageView fx:id="Pic2" fitHeight="309.0" fitWidth="201.0" layoutX="292.0" layoutY="65.0" onMouseClicked="#onmousepress2" onMousePressed="#onmousepress2" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -60,5 +60,7 @@
       <Button fx:id="T66" layoutX="627.0" layoutY="739.0" mnemonicParsing="false" onAction="#Nexttotheater6" text="12.00" />
       <Button fx:id="T666" layoutX="703.0" layoutY="739.0" mnemonicParsing="false" onAction="#Nexttotheater6" text="17.00" />
       <Button fx:id="Logout" layoutX="795.0" layoutY="400.0" mnemonicParsing="false" text="Logout" />
+      <Button layoutX="797.0" layoutY="39.0" mnemonicParsing="false" onAction="#toInfor" text="ผู้จัดทำ" />
+      <Button layoutX="863.0" layoutY="673.0" mnemonicParsing="false" onAction="#data" text="Button" />
    </children>
 </AnchorPane>

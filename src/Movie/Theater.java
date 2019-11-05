@@ -9,30 +9,20 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Theater {
     private String ticket;
-    private String theanum;
-
-
-    public void Theater(String ticket ,String theanum){
+    private ArrayList<String> seatT1 = new ArrayList<>();
+    public Theater(String ticket){
         this.ticket=ticket;
-        this.theanum = theanum;
-
-
-
+    }
+    public String getTicket() {
+        return ticket;
     }
     @Override
     public String toString(){
-        return this.ticket+""+this.theanum;
-    }
-
-    public String gettheanum() {
-        return theanum;
-    }
-
-    public String getTicket() {
-        return ticket;
+        return this.ticket;
     }
 }
 

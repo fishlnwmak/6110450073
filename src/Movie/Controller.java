@@ -54,8 +54,6 @@ public class Controller {
     TextArea textArea;
     @FXML
     Button T1, T11, T111, T2, T22, T222, T3, T33, T333, T4, T44, T444, T5, T55, T555, T6, T66, T666, Logout;
-
-
     //    //รง 1
     @FXML
     ImageView check1, check2, check3, check4, check5, check6, check7, check8, check9, check10, check11, check12;
@@ -438,11 +436,6 @@ public class Controller {
     }
 
     @FXML public void backtotheaterselection(ActionEvent actionEvent){
-
-
-
-
-
 
         Button b = (Button) actionEvent.getSource();
         Stage stage = (Stage) b.getScene().getWindow();
@@ -933,8 +926,6 @@ public class Controller {
 
 
     }
-
-
 
 
     @FXML public void changepic1(MouseEvent mouseEvent){
@@ -1995,9 +1986,7 @@ public class Controller {
 
 
     }
-
-
-
+    Money Price = new Money();
     @FXML public void data(ActionEvent actionEvent)throws IOException{
         File file = new File("Booking.csv");
         String Seperator = File.separator;

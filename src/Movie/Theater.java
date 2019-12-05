@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class Theater {
     private String ticket;
-    private ArrayList<String> seatT1 = new ArrayList<>();
     public Theater(String ticket){
         this.ticket=ticket;
     }

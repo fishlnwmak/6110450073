@@ -7,13 +7,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class LoginandRegister {
+    private String Customername;
     @FXML
     TextField Usernamelog,Passwordlog,User,Pass,name,surname,email;
     @FXML Label ERRORREGIS,ERRORLOGIN;
@@ -23,12 +23,12 @@ public class LoginandRegister {
     }
     public void Reading(String folder){
         PPL = new ArrayList<>();
-        String Seperator = File.separator;
-        String Directory = System.getProperty("user.dir")  + Seperator + "resources";
-        String Filename = Directory + Seperator + folder;
+        String FileSeparator = File.separator;
+        String Directory = System.getProperty("user.dir")  + FileSeparator + "resources";
+        String Filename = Directory + FileSeparator + folder;
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
-        System.out.println(Filename);
+
         try {
             fileReader = new FileReader(Filename);
             bufferedReader = new BufferedReader(fileReader);
@@ -54,9 +54,9 @@ public class LoginandRegister {
 
     }
     public void Writing(ArrayList<Customer> PPL){
-        String Seperate = File.separator;
-        String x = System.getProperty("user.dir") + Seperate + "resources";
-        String Filename = x + Seperate + "User.txt";
+        String FileSeparate = File.separator;
+        String x = System.getProperty("user.dir") + FileSeparate + "resources";
+        String Filename = x + FileSeparate + "User.txt";
         FileWriter fileWriter = null;
         PrintWriter printWriter = null;
         try {
@@ -72,6 +72,26 @@ public class LoginandRegister {
                 printWriter.close();
             }
         }
+
+    }
+    public void WritingUser(String U){
+        String FileSeparate = File.separator;
+        String x = System.getProperty("user.dir") + FileSeparate + "resources";
+        String Filename = x + FileSeparate + "Username.txt";
+        FileWriter fileWriter = null;
+        PrintWriter printWriter = null;
+        try {
+            fileWriter = new FileWriter(Filename);
+            printWriter = new PrintWriter(fileWriter);
+            printWriter.println(U);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {if(printWriter!=null){
+            printWriter.close();
+        }
+
+        }
+
 
     }
 
@@ -113,9 +133,12 @@ public class LoginandRegister {
         for (int i = 0; i < PPL.size(); i++) {
             if (Usernamelog.getText().equals(PPL.get(i).getID())) {
                 if (Passwordlog.getText().equals(PPL.get(i).getPassword())) {
+                    WritingUser(PPL.get(i).getName());
+
                     Button b = (Button) actionEvent.getSource();
                     Stage stage = (Stage) b.getScene().getWindow();
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
+
                     try {
                         stage.setScene(new Scene(loader.load(), 1280, 800));
                     } catch (IOException e) {
@@ -126,8 +149,6 @@ public class LoginandRegister {
                     ERRORLOGIN.setText("Password incorrect");
                     break;
                 }
-
-
             }  else {
                 ERRORLOGIN.setText("Username incorrect");
                 }

@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -14,10 +15,14 @@ import java.util.ArrayList;
 
 public class TheaterController2 extends Controller{
     @FXML
+    Button Book;
+    @FXML
+    Label Tag;
+    @FXML
     ImageView check13, check14, check15, check16, check17, check18, check19, check20, check21, check22, check23, check24, check25, check26;
     @FXML
     ImageView chair13, chair14, chair15, chair16, chair17, chair18, chair19, chair20, chair21, chair22, chair23, chair24, chair25, chair26;
-
+    private ArrayList<String> Bookseat = new ArrayList<>();
     private ArrayList<String> seatT1 = new ArrayList<>();
     private ArrayList<Theater> theaters = new ArrayList<>();
     @FXML public void seat13to26(ActionEvent actionEvent){
@@ -130,39 +135,72 @@ public class TheaterController2 extends Controller{
         }
 
         WriteT1(seatT1);
+        String string = Integer.toString(Price.getPrice());
+        Tag.setText(string);
+        Book.setDisable(true);
 
 
     }
-    @FXML public void WriteT1(ArrayList<String> seat){
-        String Seperate = File.separator;
-        String x = System.getProperty("user.dir") + Seperate + "resources";
-        String Filename = x + Seperate + "Booking.csv";
+    @FXML private void WriteT1(ArrayList<String> seat){
+
+        String FileSeparator = File.separator;
+        String x = System.getProperty("user.dir") + FileSeparator + "resources";
+        String Filename = x + FileSeparator + "Booking.csv";
         FileWriter fileWriter = null;
         PrintWriter printWriter = null;
+        FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
+
+
+        String userSeparate = File.separator;
+        String d = System.getProperty("user.dir") + userSeparate + "resources";
+        String userFilename = d + userSeparate + "Username.txt";
+        FileReader userreader = null;
+        BufferedReader bufferUserreader = null;
 
 
         try {
+            fileReader = new FileReader(Filename);
+            bufferedReader = new BufferedReader(fileReader);
+            userreader = new FileReader(userFilename);
+            bufferUserreader = new BufferedReader(userreader);
+            String U = bufferUserreader.readLine();
+            String User = U;
+            String k = null;
+            while((k = bufferedReader.readLine())!=null){
+                String s = k;
+                Bookseat.add(s);
 
+
+            }
             fileWriter = new FileWriter(Filename);
             printWriter = new PrintWriter(fileWriter);
-            for(String a:seat){
-                printWriter.println(a);
+            for(String b:Bookseat){
+                printWriter.println(b);
+            }
 
+            for(String a:seat){
+                printWriter.print(a);
+                printWriter.print(" Book by ");
+                printWriter.println(User);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
+
         }finally {
             printWriter.close();
+
         }
 
 
     }
-    @FXML public void Read(String file) {
+    public void Read(String file) throws IOException {
+
         theaters = new ArrayList<>();
-        String Seperator = File.separator;
-        String Directory = System.getProperty("user.dir") + Seperator + "resources";
-        String Filename = Directory + Seperator + "Booking.csv";
+        String Separator = File.separator;
+        String Directory = System.getProperty("user.dir") + Separator + "resources";
+        String Filename = Directory + Separator + "Booking.csv";
         System.out.println(Filename);
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
@@ -171,10 +209,10 @@ public class TheaterController2 extends Controller{
             bufferedReader = new BufferedReader(fileReader);
             String k = null;
             while((k = bufferedReader.readLine())!=null){
-                String[] intel = k.split(",");
+                String[] intel = k.split(" ");
                 for(int i = 0;i<intel.length;i++){
                     theaters.add(new Theater(intel[i]));
-                    System.out.println(intel[i]);
+
                     if(intel[i].equals("A1T2")){
                         chair13.setVisible(false);
                         chair13.setDisable(true);
@@ -274,16 +312,21 @@ public class TheaterController2 extends Controller{
                         check26.setDisable(true);
                     }
                 }
+                Tag.setText(Integer.toString(Price.getPrice()));
+
 
 
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        }finally {
+            try{
+                if(bufferedReader != null){
+                    bufferedReader.close();
+
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-
-
     }
     public void initialize() throws IOException {
         Read("Booking.csv");
@@ -382,7 +425,6 @@ public class TheaterController2 extends Controller{
             chair19.setVisible(true);
             check19.setVisible(false);
         }
-
         if(chair.equals(chair20)){
             check20.setVisible(true);
             chair20.setVisible(false);
@@ -393,7 +435,6 @@ public class TheaterController2 extends Controller{
             chair20.setVisible(true);
             check20.setVisible(false);
         }
-
         if(chair.equals(chair21)){
             check21.setVisible(true);
             chair21.setVisible(false);
@@ -404,7 +445,6 @@ public class TheaterController2 extends Controller{
             chair21.setVisible(true);
             check21.setVisible(false);
         }
-
         if(chair.equals(chair22)){
             check22.setVisible(true);
             chair22.setVisible(false);
@@ -415,7 +455,6 @@ public class TheaterController2 extends Controller{
             chair22.setVisible(true);
             check22.setVisible(false);
         }
-
         if(chair.equals(chair23)){
             check23.setVisible(true);
             chair23.setVisible(false);
@@ -426,7 +465,6 @@ public class TheaterController2 extends Controller{
             chair23.setVisible(true);
             check23.setVisible(false);
         }
-
         if(chair.equals(chair24)){
             check24.setVisible(true);
             chair24.setVisible(false);

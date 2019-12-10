@@ -17,17 +17,22 @@ import java.util.ArrayList;
 
 public class TheaterController1 extends Controller{
     @FXML
+    Button Book;
+    @FXML
     Label Tag;
     @FXML
     ImageView check1, check2, check3, check4, check5, check6, check7, check8, check9, check10, check11, check12;
     @FXML
     ImageView chair1, chair2, chair3, chair4, chair5, chair6, chair7, chair8, chair9, chair10, chair11, chair12;
     private ArrayList<Theater> theaters = new ArrayList<>();
+    private ArrayList<String> text = new ArrayList<>();
     public void initialize() throws IOException {
         Read("Booking.csv");
 
+
     }
     private ArrayList<String> seatT1 = new ArrayList<>();
+    private ArrayList<String> Bookseat = new ArrayList<>();
     @FXML public void changepic1(MouseEvent mouseEvent){
         ImageView chair = (ImageView) mouseEvent.getSource() ;
         String num = "";
@@ -256,23 +261,51 @@ public class TheaterController1 extends Controller{
         WriteT1(seatT1);
         String string = Integer.toString(Price.getPrice());
         Tag.setText(string);
+        Book.setDisable(true);
 
     }
     @FXML public void WriteT1(ArrayList<String> seat){
-        String Seperate = File.separator;
-        String x = System.getProperty("user.dir") + Seperate + "resources";
-        String Filename = x + Seperate + "Booking.csv";
+
+        String FileSeparator = File.separator;
+        String x = System.getProperty("user.dir") + FileSeparator + "resources";
+        String Filename = x + FileSeparator + "Booking.csv";
         FileWriter fileWriter = null;
         PrintWriter printWriter = null;
+        FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
+
+
+        String userSeparator = File.separator;
+        String d = System.getProperty("user.dir") + userSeparator + "resources";
+        String userFilename = d + userSeparator + "Username.txt";
+        FileReader userreader = null;
+        BufferedReader bufferUserreader = null;
 
 
         try {
+            fileReader = new FileReader(Filename);
+            bufferedReader = new BufferedReader(fileReader);
+            userreader = new FileReader(userFilename);
+            bufferUserreader = new BufferedReader(userreader);
+            String U = bufferUserreader.readLine();
+            String User = U;
+            String k = null;
+            while((k = bufferedReader.readLine())!=null){
+                String s = k;
+                Bookseat.add(s);
 
+
+            }
             fileWriter = new FileWriter(Filename);
             printWriter = new PrintWriter(fileWriter);
-            for(String a:seat){
-                printWriter.println(a);
+            for(String b:Bookseat){
+                printWriter.println(b);
+            }
 
+            for(String a:seat){
+                printWriter.print(a);
+                printWriter.print(" Book by ");
+                printWriter.println(User);
             }
 
         } catch (IOException e) {
@@ -284,10 +317,11 @@ public class TheaterController1 extends Controller{
 
     }
     public void Read(String file) throws IOException {
+
         theaters = new ArrayList<>();
-        String Seperator = File.separator;
-        String Directory = System.getProperty("user.dir") + Seperator + "resources";
-        String Filename = Directory + Seperator + "Booking.csv";
+        String Separator = File.separator;
+        String Directory = System.getProperty("user.dir") + Separator + "resources";
+        String Filename = Directory + Separator + "Booking.csv";
         System.out.println(Filename);
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
@@ -296,20 +330,17 @@ public class TheaterController1 extends Controller{
             bufferedReader = new BufferedReader(fileReader);
             String k = null;
             while((k = bufferedReader.readLine())!=null){
-                String[] intel = k.split(",");
+                String[] intel = k.split(" ");
                 for(int i = 0;i<intel.length;i++){
                     theaters.add(new Theater(intel[i]));
-                    System.out.println(intel[i]);
                     if(intel[i].equals("A1T1")){
-                        Price.addmoney(100);
                         chair1.setVisible(false);
                         chair1.setDisable(true);
-
                         check1.setVisible(true);
                         check1.setDisable(true);
                     }
                     if(intel[i].equals("A2T1")){
-                        Price.addmoney(100);
+
                         chair2.setVisible(false);
                         chair2.setDisable(true);
 
@@ -317,7 +348,7 @@ public class TheaterController1 extends Controller{
                         check2.setDisable(true);
                     }
                     if(intel[i].equals("A3T1")){
-                        Price.addmoney(100);
+
                         chair3.setVisible(false);
                         chair3.setDisable(true);
 
@@ -325,7 +356,7 @@ public class TheaterController1 extends Controller{
                         check3.setDisable(true);
                     }
                     if(intel[i].equals("A4T1")){
-                        Price.addmoney(100);
+
                         chair4.setVisible(false);
                         chair4.setDisable(true);
 
@@ -333,7 +364,6 @@ public class TheaterController1 extends Controller{
                         check4.setDisable(true);
                     }
                     if(intel[i].equals("B1T1")){
-                        Price.addmoney(100);
                         chair5.setVisible(false);
                         chair5.setDisable(true);
 
@@ -341,7 +371,7 @@ public class TheaterController1 extends Controller{
                         check5.setDisable(true);
                     }
                     if(intel[i].equals("B2T1")){
-                        Price.addmoney(100);
+
                         chair6.setVisible(false);
                         chair6.setDisable(true);
 
@@ -349,7 +379,7 @@ public class TheaterController1 extends Controller{
                         check6.setDisable(true);
                     }
                     if(intel[i].equals("B3T1")){
-                        Price.addmoney(100);
+
                         chair7.setVisible(false);
                         chair7.setDisable(true);
 
@@ -357,7 +387,7 @@ public class TheaterController1 extends Controller{
                         check7.setDisable(true);
                     }
                     if(intel[i].equals("B4T1")){
-                        Price.addmoney(100);
+
                         chair8.setVisible(false);
                         chair8.setDisable(true);
 
@@ -365,7 +395,7 @@ public class TheaterController1 extends Controller{
                         check8.setDisable(true);
                     }
                     if(intel[i].equals("C1T1")){
-                        Price.addmoney(120);
+
                         chair9.setVisible(false);
                         chair9.setDisable(true);
 
@@ -373,7 +403,7 @@ public class TheaterController1 extends Controller{
                         check9.setDisable(true);
                     }
                     if(intel[i].equals("C2T1")){
-                        Price.addmoney(120);
+
                         chair10.setVisible(false);
                         chair10.setDisable(true);
 
@@ -381,7 +411,7 @@ public class TheaterController1 extends Controller{
                         check10.setDisable(true);
                     }
                     if(intel[i].equals("C3T1")){
-                        Price.addmoney(120);
+
                         chair11.setVisible(false);
                         chair11.setDisable(true);
 
@@ -389,278 +419,12 @@ public class TheaterController1 extends Controller{
                         check11.setDisable(true);
                     }
                     if(intel[i].equals("C4T1")){
-                        Price.addmoney(120);
+
                         chair12.setVisible(false);
                         chair12.setDisable(true);
 
                         check12.setVisible(true);
                         check12.setDisable(true);
-                    }
-                    if(intel[i].equals("A1T2")){
-                        chair13.setVisible(false);
-                        chair13.setDisable(true);
-
-                        check13.setVisible(true);
-                        check13.setDisable(true);
-                    }
-                    if(intel[i].equals("A2T2")){
-                        chair14.setVisible(false);
-                        chair14.setDisable(true);
-
-                        check14.setVisible(true);
-                        check14.setDisable(true);
-                    }
-                    if(intel[i].equals("A3T2")){
-                        chair15.setVisible(false);
-                        chair15.setDisable(true);
-
-                        check15.setVisible(true);
-                        check15.setDisable(true);
-                    }
-                    if(intel[i].equals("A4T2")){
-                        chair16.setVisible(false);
-                        chair16.setDisable(true);
-
-                        check16.setVisible(true);
-                        check16.setDisable(true);
-                    }
-                    if(intel[i].equals("B1T2")){
-                        chair17.setVisible(false);
-                        chair17.setDisable(true);
-
-                        check17.setVisible(true);
-                        check17.setDisable(true);
-                    }
-                    if(intel[i].equals("B2T2")){
-                        chair18.setVisible(false);
-                        chair18.setDisable(true);
-
-                        check18.setVisible(true);
-                        check18.setDisable(true);
-                    }
-                    if(intel[i].equals("B3T2")){
-                        chair19.setVisible(false);
-                        chair19.setDisable(true);
-
-                        check19.setVisible(true);
-                        check19.setDisable(true);
-                    }
-                    if(intel[i].equals("B4T2")){
-                        chair20.setVisible(false);
-                        chair20.setDisable(true);
-
-                        check20.setVisible(true);
-                        check20.setDisable(true);
-                    }
-                    if(intel[i].equals("C1T2")){
-                        chair21.setVisible(false);
-                        chair21.setDisable(true);
-
-                        check21.setVisible(true);
-                        check21.setDisable(true);
-                    }
-                    if(intel[i].equals("C2T2")){
-                        chair22.setVisible(false);
-                        chair22.setDisable(true);
-
-                        check22.setVisible(true);
-                        check22.setDisable(true);
-                    }
-                    if(intel[i].equals("C3T2")){
-                        chair23.setVisible(false);
-                        chair23.setDisable(true);
-
-                        check23.setVisible(true);
-                        check23.setDisable(true);
-                    }
-                    if(intel[i].equals("C4T2")){
-                        chair24.setVisible(false);
-                        chair24.setDisable(true);
-
-                        check24.setVisible(true);
-                        check24.setDisable(true);
-                    }
-                    if(intel[i].equals("D1T2")){
-                        chair25.setVisible(false);
-                        chair25.setDisable(true);
-
-                        check25.setVisible(true);
-                        check25.setDisable(true);
-                    }
-                    if(intel[i].equals("D2T2")){
-                        chair26.setVisible(false);
-                        chair26.setDisable(true);
-
-                        check26.setVisible(true);
-                        check26.setDisable(true);
-                    }
-                    if(intel[i].equals("A1T3")){
-                        chair27.setVisible(false);
-                        chair27.setDisable(true);
-
-                        check27.setVisible(true);
-                        check27.setDisable(true);
-                    }
-                    if(intel[i].equals("A2T3")){
-                        chair28.setVisible(false);
-                        chair28.setDisable(true);
-
-                        check28.setVisible(true);
-                        check28.setDisable(true);
-                    }
-                    if(intel[i].equals("A3T3")){
-                        chair29.setVisible(false);
-                        chair29.setDisable(true);
-
-                        check29.setVisible(true);
-                        check29.setDisable(true);
-                    }
-                    if(intel[i].equals("A4T3")){
-                        chair30.setVisible(false);
-                        chair30.setDisable(true);
-
-                        check30.setVisible(true);
-                        check30.setDisable(true);
-                    }
-                    if(intel[i].equals("B1T3")){
-                        chair31.setVisible(false);
-                        chair31.setDisable(true);
-
-                        check31.setVisible(true);
-                        check31.setDisable(true);
-                    }
-                    if(intel[i].equals("B2T3")){
-                        chair32.setVisible(false);
-                        chair32.setDisable(true);
-
-                        check32.setVisible(true);
-                        check32.setDisable(true);
-                    }
-                    if(intel[i].equals("B3T3")){
-                        chair33.setVisible(false);
-                        chair33.setDisable(true);
-
-                        check33.setVisible(true);
-                        check33.setDisable(true);
-                    }
-                    if(intel[i].equals("B4T3")){
-                        chair34.setVisible(false);
-                        chair34.setDisable(true);
-
-                        check34.setVisible(true);
-                        check34.setDisable(true);
-                    }
-                    if(intel[i].equals("C1T3")){
-                        chair35.setVisible(false);
-                        chair35.setDisable(true);
-
-                        check35.setVisible(true);
-                        check35.setDisable(true);
-                    }
-                    if(intel[i].equals("C2T3")){
-                        chair36.setVisible(false);
-                        chair36.setDisable(true);
-
-                        check36.setVisible(true);
-                        check36.setDisable(true);
-                    }
-                    if(intel[i].equals("C3T3")){
-                        chair37.setVisible(false);
-                        chair37.setDisable(true);
-
-                        check37.setVisible(true);
-                        check37.setDisable(true);
-                    }
-                    if(intel[i].equals("C4T3")){
-                        chair38.setVisible(false);
-                        chair38.setDisable(true);
-
-                        check38.setVisible(true);
-                        check38.setDisable(true);
-                    }
-                    if(intel[i].equals("D1T3")){
-                        chair39.setVisible(false);
-                        chair39.setDisable(true);
-
-                        check39.setVisible(true);
-                        check39.setDisable(true);
-                    }
-                    if(intel[i].equals("D2T3")){
-                        chair40.setVisible(false);
-                        chair40.setDisable(true);
-
-                        check40.setVisible(true);
-                        check40.setDisable(true);
-                    }
-                    if (intel[i].equals("A1T4")) {
-                        chair41.setVisible(false);
-                        chair41.setDisable(true);
-
-                        check41.setVisible(true);
-                        check41.setDisable(true);
-                    }
-                    if (intel[i].equals("A2T4")) {
-                        chair42.setVisible(false);
-                        chair42.setDisable(true);
-
-                        check42.setVisible(true);
-                        check42.setDisable(true);
-                    }
-                    if (intel[i].equals("A3T4")) {
-                        chair43.setVisible(false);
-                        chair43.setDisable(true);
-
-                        check43.setVisible(true);
-                        check43.setDisable(true);
-                    }
-                    if (intel[i].equals("A4T4")) {
-                        chair44.setVisible(false);
-                        chair44.setDisable(true);
-
-                        check45.setVisible(true);
-                        check45.setDisable(true);
-                    }
-                    if (intel[i].equals("B1T4")) {
-                        chair46.setVisible(false);
-                        chair46.setDisable(true);
-
-                        check46.setVisible(true);
-                        check46.setDisable(true);
-                    }
-                    if (intel[i].equals("B2T4")) {
-                        chair47.setVisible(false);
-                        chair47.setDisable(true);
-
-                        check47.setVisible(true);
-                        check47.setDisable(true);
-                    }
-                    if (intel[i].equals("B3T4")) {
-                        chair48.setVisible(false);
-                        chair48.setDisable(true);
-
-                        check48.setVisible(true);
-                        check48.setDisable(true);
-                    }
-                    if (intel[i].equals("B4T4")) {
-                        chair49.setVisible(false);
-                        chair49.setDisable(true);
-
-                        check49.setVisible(true);
-                        check49.setDisable(true);
-                    }
-                    if (intel[i].equals("C1T4")) {
-                        chair50.setVisible(false);
-                        chair50.setDisable(true);
-
-                        check50.setVisible(true);
-                        check50.setDisable(true);
-                    }
-                    if (intel[i].equals("C2T4")) {
-                        chair51.setVisible(false);
-                        chair51.setDisable(true);
-
-                        check51.setVisible(true);
-                        check51.setDisable(true);
                     }
                 }
                 Tag.setText(Integer.toString(Price.getPrice()));

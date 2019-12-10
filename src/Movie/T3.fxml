@@ -1,81 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Movie.TheaterController3">
    <children>
       <ImageView fx:id="chair27" fitHeight="76.0" fitWidth="97.0" layoutX="227.0" layoutY="104.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
-      <Button layoutX="879.0" layoutY="523.0" mnemonicParsing="false" onAction="#seat27to40" text="Next" />
+      <Button fx:id="Book" layoutX="879.0" layoutY="523.0" mnemonicParsing="false" onAction="#seat27to40" text="Book" />
       <ImageView fx:id="chair28" fitHeight="76.0" fitWidth="97.0" layoutX="357.0" layoutY="104.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair29" fitHeight="76.0" fitWidth="97.0" layoutX="491.0" layoutY="104.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair30" fitHeight="76.0" fitWidth="97.0" layoutX="634.0" layoutY="104.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair31" fitHeight="76.0" fitWidth="97.0" layoutX="227.0" layoutY="209.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair32" fitHeight="76.0" fitWidth="97.0" layoutX="357.0" layoutY="209.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair33" fitHeight="76.0" fitWidth="97.0" layoutX="491.0" layoutY="209.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair34" fitHeight="76.0" fitWidth="97.0" layoutX="634.0" layoutY="209.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair35" fitHeight="76.0" fitWidth="97.0" layoutX="227.0" layoutY="332.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair36" fitHeight="76.0" fitWidth="97.0" layoutX="357.0" layoutY="332.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair37" fitHeight="76.0" fitWidth="97.0" layoutX="491.0" layoutY="332.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair38" fitHeight="76.0" fitWidth="97.0" layoutX="634.0" layoutY="332.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/another%20chair.png" />
+            <Image url="@../images/anotherchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair39" fitHeight="76.0" fitWidth="97.0" layoutX="357.0" layoutY="438.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/vip%20chair.png" />
+            <Image url="@../images/vipchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="chair40" fitHeight="76.0" fitWidth="97.0" layoutX="491.0" layoutY="438.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/vip%20chair.png" />
+            <Image url="@../images/vipchair.png" />
          </image>
       </ImageView>
       <ImageView fx:id="check27" fitHeight="76.0" fitWidth="97.0" layoutX="227.0" layoutY="104.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true" visible="false">
@@ -140,15 +141,16 @@
       </ImageView>
       <ImageView fx:id="check39" fitHeight="76.0" fitWidth="97.0" layoutX="357.0" layoutY="438.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../images/vip%20chair%20check.png" />
+            <Image url="@../images/vipchaircheck.png" />
          </image>
       </ImageView>
       <ImageView fx:id="check40" fitHeight="76.0" fitWidth="97.0" layoutX="491.0" layoutY="438.0" onMouseClicked="#changepic3" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
-            <Image url="@../images/vip%20chair%20check.png" />
+            <Image url="@../images/vipchaircheck.png" />
          </image>
       </ImageView>
-      <Button layoutX="66.0" layoutY="73.0" mnemonicParsing="false" onAction="#show3" prefHeight="31.0" prefWidth="161.0" text="เเสดงผลลัพธ์การจอง" />
-      <Button layoutX="114.0" layoutY="508.0" mnemonicParsing="false" onAction="#backtotheaterselection" text="Button" />
+      <Button layoutX="114.0" layoutY="508.0" mnemonicParsing="false" onAction="#backtotheaterselection" text="back" />
+      <Label layoutX="425.0" layoutY="544.0" text="Price" />
+      <Label fx:id="Tag" layoutX="474.0" layoutY="544.0" />
    </children>
 </AnchorPane>

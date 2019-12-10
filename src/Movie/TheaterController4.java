@@ -253,7 +253,7 @@ public class TheaterController4 extends Controller {
             }
         }
     }
-    @FXML public void WriteT1(ArrayList<String> seat){
+    @FXML public void WriteT1(ArrayList<String> seat) throws IOException {
 
         String Separate = File.separator;
         String x = System.getProperty("user.dir") + Separate + "resources";
@@ -301,6 +301,8 @@ public class TheaterController4 extends Controller {
             e.printStackTrace();
         }finally {
             printWriter.close();
+            fileReader.close();
+            userreader.close();
         }
 
 
@@ -317,7 +319,7 @@ public class TheaterController4 extends Controller {
         }
         stage.show();
     }
-    @FXML public void seat41to51(ActionEvent actionEvent){
+    @FXML public void seat41to51(ActionEvent actionEvent) throws IOException {
 
 
         if(chair41.isVisible()== false&&!(chair41.isDisable())){

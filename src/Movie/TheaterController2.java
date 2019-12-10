@@ -25,7 +25,7 @@ public class TheaterController2 extends Controller{
     private ArrayList<String> Bookseat = new ArrayList<>();
     private ArrayList<String> seatT1 = new ArrayList<>();
     private ArrayList<Theater> theaters = new ArrayList<>();
-    @FXML public void seat13to26(ActionEvent actionEvent){
+    @FXML public void seat13to26(ActionEvent actionEvent) throws IOException {
 
         if(chair13.isVisible()== false&&!(chair13.isDisable())){
             Price.addmoney(140);
@@ -141,7 +141,7 @@ public class TheaterController2 extends Controller{
 
 
     }
-    @FXML private void WriteT1(ArrayList<String> seat){
+    @FXML private void WriteT1(ArrayList<String> seat) throws IOException {
 
         String FileSeparator = File.separator;
         String x = System.getProperty("user.dir") + FileSeparator + "resources";
@@ -190,6 +190,8 @@ public class TheaterController2 extends Controller{
 
         }finally {
             printWriter.close();
+            fileReader.close();
+            userreader.close();
 
         }
 

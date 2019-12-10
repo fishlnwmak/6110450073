@@ -163,7 +163,7 @@ public class TheaterController3 extends Controller{
             }
         }
     }
-    @FXML public void WriteT1(ArrayList<String> seat){
+    @FXML public void WriteT1(ArrayList<String> seat) throws IOException {
 
         String Separate = File.separator;
         String x = System.getProperty("user.dir") + Separate + "resources";
@@ -211,11 +211,13 @@ public class TheaterController3 extends Controller{
             e.printStackTrace();
         }finally {
             printWriter.close();
+            fileReader.close();
+            userreader.close();
         }
 
 
     }
-    @FXML public void seat27to40(ActionEvent actionEvent){
+    @FXML public void seat27to40(ActionEvent actionEvent) throws IOException {
         if(chair27.isVisible()== false&&!(chair27.isDisable())){
             Price.addmoney(140);
             seatT1.add("A1T3");

@@ -165,7 +165,7 @@ public class TheaterController1 extends Controller{
             check12.setVisible(false);
         }
     }
-    @FXML public void seat1to12(ActionEvent actionEvent) {
+    @FXML public void seat1to12(ActionEvent actionEvent) throws IOException {
 
 
         if(chair1.isVisible()== false&&!(chair1.isDisable())){
@@ -264,7 +264,7 @@ public class TheaterController1 extends Controller{
         Book.setDisable(true);
 
     }
-    @FXML public void WriteT1(ArrayList<String> seat){
+    @FXML public void WriteT1(ArrayList<String> seat) throws IOException {
 
         String FileSeparator = File.separator;
         String x = System.getProperty("user.dir") + FileSeparator + "resources";
@@ -312,6 +312,7 @@ public class TheaterController1 extends Controller{
             e.printStackTrace();
         }finally {
             printWriter.close();
+            fileReader.close();
         }
 
 
